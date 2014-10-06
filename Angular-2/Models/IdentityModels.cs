@@ -31,6 +31,12 @@ namespace Angular_2.Models
             return new ApplicationDbContext();
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer(
+                new MigrateDatabaseToLatestVersion<ApplicationDbContext, Migrations.Configuration>());
+        }
+
         public DbSet<TodoItem> Todoes { get; set; }
     }
 }
