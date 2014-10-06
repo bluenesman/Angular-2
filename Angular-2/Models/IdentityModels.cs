@@ -22,7 +22,7 @@ namespace Angular_2.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("TodoContext", throwIfV1Schema: false)
         {
         }
         
