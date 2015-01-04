@@ -15,3 +15,8 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#dedim{
+    width:200px;
+}
+
