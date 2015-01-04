@@ -16,7 +16,7 @@ textarea {
     max-width: 280px;
 }
 
-#dedim{
+#dedim:after{
     width:200px;
     color:#ffffff;
 }
